@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0EF6115A-7FC1-42E2-AC00-DF4C0DCA4184}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MedProekt1</RootNamespace>
+    <AssemblyName>MedProekt1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administracia_Poleklinika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracia_Poleklinika.Designer.cs">
+      <DependentUpon>Administracia_Poleklinika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator.Designer.cs">
+      <DependentUpon>Administrator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AProektSK1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AProektSK1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Avtarizacia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Avtarizacia.Designer.cs">
+      <DependentUpon>Avtarizacia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dogovor_na_obsluzivanie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dogovor_na_obsluzivanie.Designer.cs">
+      <DependentUpon>Dogovor_na_obsluzivanie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees.Designer.cs">
+      <DependentUpon>Employees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hospital.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hospital.Designer.cs">
+      <DependentUpon>Hospital.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medecinskaa_karta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medecinskaa_karta.Designer.cs">
+      <DependentUpon>Medecinskaa_karta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Oformit_dogovor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Oformit_dogovor.Designer.cs">
+      <DependentUpon>Oformit_dogovor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patients.Designer.cs">
+      <DependentUpon>Patients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Poliklinika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Poliklinika.Designer.cs">
+      <DependentUpon>Poliklinika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Raspolozenie_Hospital.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Raspolozenie_Hospital.Designer.cs">
+      <DependentUpon>Raspolozenie_Hospital.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Raspolozenie_Polekliniki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Raspolozenie_Polekliniki.Designer.cs">
+      <DependentUpon>Raspolozenie_Polekliniki.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration.Designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Talon_Potient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Talon_Potient.Designer.cs">
+      <DependentUpon>Talon_Potient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zapis_Hospital.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zapis_Hospital.Designer.cs">
+      <DependentUpon>Zapis_Hospital.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zapis_Polikliniki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zapis_Polikliniki.Designer.cs">
+      <DependentUpon>Zapis_Polikliniki.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Administracia_Poleklinika.resx">
+      <DependentUpon>Administracia_Poleklinika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator.resx">
+      <DependentUpon>Administrator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Avtarizacia.resx">
+      <DependentUpon>Avtarizacia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dogovor_na_obsluzivanie.resx">
+      <DependentUpon>Dogovor_na_obsluzivanie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees.resx">
+      <DependentUpon>Employees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hospital.resx">
+      <DependentUpon>Hospital.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medecinskaa_karta.resx">
+      <DependentUpon>Medecinskaa_karta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Oformit_dogovor.resx">
+      <DependentUpon>Oformit_dogovor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patients.resx">
+      <DependentUpon>Patients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Poliklinika.resx">
+      <DependentUpon>Poliklinika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Raspolozenie_Hospital.resx">
+      <DependentUpon>Raspolozenie_Hospital.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Raspolozenie_Polekliniki.resx">
+      <DependentUpon>Raspolozenie_Polekliniki.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Talon_Potient.resx">
+      <DependentUpon>Talon_Potient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zapis_Hospital.resx">
+      <DependentUpon>Zapis_Hospital.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zapis_Polikliniki.resx">
+      <DependentUpon>Zapis_Polikliniki.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="AProektSK1DataSet.xsc">
+      <DependentUpon>AProektSK1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AProektSK1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AProektSK1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AProektSK1DataSet.xss">
+      <DependentUpon>AProektSK1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
